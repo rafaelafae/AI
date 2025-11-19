@@ -3,10 +3,10 @@ _____________________________________________
 
 **Parte 1** - Criando legendas para imagens [**React**] - front end
 _____________________________________________
-    [ ]  Criar projeto
-    [ ]  Alterar UI
-    [ ]  Criar interface para IA
-    [ ]  Executar IA
+    [x]  Criar projeto
+    [x]  Alterar UI
+    [x]  Criar interface para IA
+    [x]  Executar IA
 
 **Parte 2** - Traduzindo Legendas (PB <> EN) [**Node**] - back end
 _____________________________________________
