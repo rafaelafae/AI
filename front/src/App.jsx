@@ -6,9 +6,12 @@ export function App() {
   const [imgSrc, setImgSrc] = useState(null);
   const [caption, setCaption] = useState("<Caption>");
 
-  function addCaption() {
-    const caption = generateCaption(imgSrc);
-    setCaption(caption);
+  async function addCaption() {
+    setCaption("Generating caption...");
+
+    const caption = await generateCaption(imgSrc);
+
+    setCaption(caption[0]['generated_text']);
   }
 
   return (
