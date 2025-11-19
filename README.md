@@ -1,4 +1,4 @@
-**Projeto Prático**
+**Projeto Prático IA**
 _____________________________________________
 
 **Parte 1** - Criando legendas para imagens [**React**] - front end
@@ -10,11 +10,11 @@ _____________________________________________
 
 **Parte 2** - Traduzindo Legendas (PB <> EN) [**Node**] - back end
 _____________________________________________
-    [ ] Criar projeto
-    [ ]  Criar servidor HTTP
-    [ ]  Criar endpoint
-    [ ]  Executar modelo de IA
+    [x] Criar projeto
+    [x]  Criar servidor HTTP
+    [x]  Criar endpoint
     [ ]  Conectar com front end
+    [ ]  Executar modelo de IA
     [ ]  Containerizar
 
 **Parte 3** - Sintetização de áudio [**Python**] - back end
