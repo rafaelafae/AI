@@ -1,14 +1,28 @@
+import { translate } from './models/api.js';
+import express from 'express';
+import cors from 'cors';
 
-const express = require('express');
 const app = express();
 const port = 3000;
+
+app.use(express.json());
+
+app.use(cors(
+    {
+        origin: 'http://localhost:5173'
+    }
+));
 
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
 app.post('/translate', (req, res) => {
-    res.send({ "tranlated_text": "Legenda traduzida" });
+    console.log("Nova requisição!");
+
+    const textEN = req.body["text"];
+
+    res.send(translate(textEN));
 });
 
 app.listen(port, () => {
