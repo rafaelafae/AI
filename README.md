@@ -13,7 +13,7 @@ _____________________________________________
     [x] Criar projeto
     [x]  Criar servidor HTTP
     [x]  Criar endpoint
-    [ ]  Conectar com front end
+    [x]  Conectar com front end
     [ ]  Executar modelo de IA
     [ ]  Containerizar
 

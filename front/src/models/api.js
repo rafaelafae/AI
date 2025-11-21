@@ -1,4 +1,4 @@
-import { ImageCaptioner } from "./ImageCaptioner";
+import { ImageCaptioner } from "./ImageCaptioner.js";
 
 export async function generateCaption(imgSrc) {
     return ImageCaptioner.generateCaption(imgSrc);
@@ -10,6 +10,6 @@ export async function translate(captionEN) {
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ "text": captionEN })
+        body: JSON.stringify({ "text": captionEN[0]["generated_text"] })
     }).then(resp => resp.json());
 }

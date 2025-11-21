@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { generateCaption, translate } from './models/api';
+import { generateCaption, translate } from './models/api.js';
 
 export function App() {
   const [imgSrc, setImgSrc] = useState(null);
@@ -9,14 +9,12 @@ export function App() {
 
   async function addCaption() {
     setCaptionEN("Generating caption...");
-
-    // const captionEN = await generateCaption(imgSrc);
-    // setCaptionEN(captionEN[0]['generated_text']);
+    const captionEN = await generateCaption(imgSrc);
+    setCaptionEN(captionEN[0]['generated_text']);
 
     setCaptionPB("Traduzindo legenda...");
-
     const captionPB = await translate(captionEN)
-    setCaptionPB(captionPB[0]['tranlated_text']);
+    setCaptionPB(captionPB[0]['translation_text']);
   }
 
   return (
