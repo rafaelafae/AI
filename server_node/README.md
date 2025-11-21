@@ -4,5 +4,5 @@ _____________________________________________
     [x]  Criar servidor HTTP
     [x]  Criar endpoint
     [x]  Conectar com front end
-    [ ]  Executar modelo de IA
-    [ ]  Containerizar
+    [x]  Executar modelo de IA
+    [x]  Containerizar
