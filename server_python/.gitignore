@@ -1,1 +1,77 @@
+# ----------------------------------------------------------------------
+# 1. Pastas e Arquivos de Build/Cache
+# ----------------------------------------------------------------------
+
+# Arquivos gerados pelo Python (bytecode)
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.pylintrc
+
+# Pastas de distribuição (builds)
+dist/
+build/
+*.egg-info/
+
+# ----------------------------------------------------------------------
+# 2. Ambientes Virtuais (VITAL)
+# ----------------------------------------------------------------------
+
+# Ambientes virtuais (a sua pasta .venv, por exemplo)
+.venv/
 venv/
+env/
+
+# Gerenciadores de dependências (Pipenv, Poetry)
+# Arquivos de lock são úteis para o Git, mas o ambiente em si não.
+.direnv/
+.pipenv/
+
+# ----------------------------------------------------------------------
+# 3. Arquivos de Sistema / Temporários
+# ----------------------------------------------------------------------
+
+# Logs
+*.log
+tmp/
+.temp/
+
+# Arquivos do S.O.
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# ----------------------------------------------------------------------
+# 4. Arquivos do Editor (VS Code)
+# ----------------------------------------------------------------------
+
+.vscode/ # Configurações de workspace específicas
+!/.vscode/settings.json # Exceções: se quiser rastrear configurações gerais
+!/.vscode/extensions.json
+
+# ----------------------------------------------------------------------
+# 5. Frontend/JavaScript (Se houver uma aplicação frontend no projeto)
+# ----------------------------------------------------------------------
+node_modules/
+
+# Arquivos de build do Frontend (Vite, Webpack, etc.)
+/dist
+/build
+/out
+
+# ----------------------------------------------------------------------
+# 6. Arquivos Específicos do Seu Projeto
+# ----------------------------------------------------------------------
+
+# Chaves de API, senhas e configurações secretas (MUITO IMPORTANTE!)
+*.env
+.env
+.flaskenv
+secrets.json
+
+# Arquivos de base de dados locais
+*.sqlite
+db.sqlite3
+
+# Se estiver usando Docker (para ignorar volumes de dados)
+data/
