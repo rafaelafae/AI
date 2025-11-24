@@ -21,7 +21,7 @@ _____________________________________________
 _____________________________________________
     [x]  Criar projeto
     [x]  Criar servidor HTTP
-    [ ]  Criar endpoint
-    [ ]  Executar modelo de IA
-    [ ]  Conectar com front end
-    [ ]  Containerizar
+    [x]  Criar endpoint
+    [x]  Executar modelo de IA
+    [x]  Conectar com front end
+    [x]  Containerizar
