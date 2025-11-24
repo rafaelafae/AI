@@ -19,8 +19,8 @@ _____________________________________________
 
 **Parte 3** - Sintetização de áudio [**Python**] - back end
 _____________________________________________
-    [ ]  Criar projeto
-    [ ]  Criar servidor HTTP
+    [x]  Criar projeto
+    [x]  Criar servidor HTTP
     [ ]  Criar endpoint
     [ ]  Executar modelo de IA
     [ ]  Conectar com front end
